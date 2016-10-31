@@ -3,6 +3,8 @@ Recurve JS
 
 Recurve is a simple utility library for manipulating mathematical functions or values. The most obvious applications are creating easing functions for motion, manipulating the distribution of random numbers, and use for general interpolation.
 
+You can see a [demo of the easing functions](http://codepen.io/jhnsnc/pen/EgzwjA/) on Codepen.
+
 Planned features include:
 
 - complete set of Penner easing functions

@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.0.1] - 2016-10-31
+## [Unreleased] - (not released on NPM yet)
 ### Added
 - Initial project structure
 - Easing functions based on Robert Penner's easing equations
