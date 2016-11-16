@@ -6,7 +6,12 @@ import Quart from './Quart';
 import Quint from './Quint';
 
 import Sine from './Sine';
+import Circ from './Circ';
+import Expo from './Expo';
+
 import Back from './Back';
+import Elastic from './Elastic';
+import Bounce from './Bounce';
 
 export default {
   'constant': constant,
@@ -23,5 +28,10 @@ export default {
   'Strong': Quint,
 
   'Sine': Sine,
+  'Circ': Circ,
+  'Expo': Expo,
+
   'Back': Back,
+  'Elastic': Elastic,
+  'Bounce': Bounce,
 };

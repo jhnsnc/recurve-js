@@ -1,6 +1,6 @@
 {
   "name": "recurve",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of highly composable utility functions for transforming numbers around the range 0-1. Useful for interpolation, easing, and weighted distribution.",
   "main": "dist/recurve.js",
   "scripts": {
