@@ -1,20 +1,28 @@
 const Elastic = {
 
-  'in': (n, f) => { //TODO
-    if (!f) f = 1.70158;
-    return n;
+  'in': (n) => {
+    return n === 0.0
+      ? 0.0
+      : n === 1.0
+        ? 1.0
+        : -1 * Math.pow(2,10*(n-=1)) * Math.sin( (n-0.075)*(2*Math.PI)/0.3 );
   },
 
-  'out': (n, f) => { //TODO
-    if (!f) f = 1.70158;
-    return n;
+  'out': (n) => {
+    return n === 0.0
+      ? 0.0
+      : n === 1.0
+        ? 1.0
+        : Math.pow(2,-10*n) * Math.sin( (n-0.075)*(2*Math.PI)/0.3 ) + 1;
   },
 
-  'inOut': (n, f) => { //TODO
-    if (!f) f = 1.70158;
-    return ((n*=2) < 1)
-      ? n*0.5
-      : 0.5 * (n-=1) + 0.5;
+  'inOut': (n) => {
+    if (n === 0.0) return 0.0;
+    if (n === 1.0) return 1.0;
+    n*=2;
+    return (n < 1)
+      ? -0.5 * Math.pow(2,10*(n-=1)) * Math.sin( (n-0.075)*(2*Math.PI)/0.3 )
+      : 0.5 * Math.pow(2,-10*(n-=1)) * Math.sin( (n-0.075)*(2*Math.PI)/0.3 ) + 1;
   },
 
 };

@@ -37,8 +37,8 @@ Available functions:
 - `ease.Circ.in`, `ease.Circ.out`, and `ease.Circ.inOut` - Easing that follows the curvature of a circle quadrant.
 - `ease.Expo.in`, `ease.Expo.out`, and `ease.Expo.inOut` - Easing created by modifying the exponent of a base number. The base number can optionally be specified with the second parameter and defaults to `2`.
 - `ease.Back.in`, `ease.Back.out`, and `ease.Back.inOut` - Easing that starts or ends by extending beyond the limits of the range `[0.0, 1.0]`. The amount is influenced by the optional second parameter, which defaults to `1.70158`.
-- `ease.Elastic.in`, `ease.Elastic.out`, and `ease.Elastic.inOut` - Coming soon. Easing reminiscent of the motion of a spring. The amount is influenced by the optional second parameter, which defaults to `1.70158`.
-- `ease.Bounce.in`, `ease.Bounce.out`, and `ease.Bounce.inOut` - Coming soon. Easing reminiscent of the motion of a bouncing ball. The height of the bounces is influenced by the optional second parameter, which defaults to `7.5625`.
+- `ease.Elastic.in`, `ease.Elastic.out`, and `ease.Elastic.inOut` - Easing reminiscent of the motion of a spring.
+- `ease.Bounce.in`, `ease.Bounce.out`, and `ease.Bounce.inOut` - Easing reminiscent of the motion of a bouncing ball. Bounces 3 times, decreasing height by a factor of `0.25` with each bounce.
 - `ease.Linear` - Simply returns the input parameter. Useful when an easing function is required but no calculations should be performed.
 - `ease.maxValue` - Always returns `1.0`.
 - `ease.minValue` - Always returns `0.0`.
